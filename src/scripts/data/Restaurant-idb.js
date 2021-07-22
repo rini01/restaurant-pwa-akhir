@@ -21,6 +21,7 @@ const Database = {
         return (await dbPromise).delete(OBJECT_STORE_NAME, id);
     },
     async putResto(resto) {
+        // eslint-disable-next-line no-prototype-builtins
         if (!resto.hasOwnProperty('id')) {
             return;
         }

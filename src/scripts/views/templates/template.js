@@ -4,7 +4,7 @@ const createRestoItemTemplate = (resto) => `
   <div class="resto-item">
     <div class="resto-item__header">
         <img class="lazyload resto-item__header__poster" alt="${resto.name}"
-            src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL_MEDIUM + resto.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}">
+            data-src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL_MEDIUM + resto.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}">
         <div class="resto-item__header__rating">
             <p>⭐️<span class="resto-item__header__rating__score">${resto.rating}</span></p>
         </div>
@@ -21,7 +21,7 @@ const createRestoDetailTemplate = (detail) => `
   <div class="detail">
     <div>
       <div>
-        <img class="lazyload img-res2" alt="image ${detail.name}" src="${
+        <img class="lazyload img-res2" alt="image ${detail.name}" data-src="${
   CONFIG.BASE_IMAGE_URL_SMALL + detail.pictureId
 }" crossorigin="anonymous"/>
         <h3>${detail.name}</h3>      
