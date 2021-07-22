@@ -101,7 +101,7 @@ body {
     width: 100%;
     min-height: 380px;
     background: #000000;
-    background-image: url('../public/hero-image/hero-image_4-small.jpg');
+    background-image: url('../hero-image/hero-image_4-small.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
